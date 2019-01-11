@@ -4,47 +4,61 @@
   
     <title></title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles-projets.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
   </head>
-  <body>
-    <nav>
-      <ul>
-        <li>Univers</li>
-        <li>
-          <img id="logo" src="img/izidee-signe.svg" alt="logo portfolio" />
-        </li>
-        <li><a href="projet.html">Projets</a></li>
-      </ul>
-    </nav>
-    <section id="corps">
-      <header>
-        <img id="lunettes" src="img/img-home-lunettes-soleil.png" alt="" />
-        <h1><div id="prenom" >Cécile</div>  <div id="nom" >Freyd-Foucault</div></h1>
-      </header>
-      <section id="designer">
-        <div id="text-designer">
-          <h2>Designer d'Interfaces</h2>
-          <!--<h3>Mais pas que</h3>-->
-        </div>
-        <img src="img/img-home-cocotier.png" alt="" />
-      </section>
-    </section>
-    <!--
-      <figure>
+
+<body>
+
+    <nav id="nav1">
         <ul>
-          <li><img src="src/behance-b.svg" alt="Page behance"</li>
-          <li><img src="src/linkedin-b.svg" alt="Profil linkedin"</li>
-          <li><img src="src/insta-b.svg" alt="Page instagram"</li>
+          <li>Univers</li>
+          <li>
+            <a href="index.html"><img id="logo" src="img/izidee-signe.svg" alt="logo portfolio" /> </a> 
+          </li>
+          <li><a href="">Projets</a></li>
         </ul>
-      </figure>
-    -->
-    <nav>
-      <ul>
-        <li>Projet Daïkiry</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-  </body>
-</html>
+      </nav>
+  <header>
+    <div class="projets-left">
+      <div id=text-flamant><img src="img/img-projet-flamant-rose.png" alt="Flamant rose bleu">
+      <h1>Pro<br>jets</h1></div>
+    </div>  
+    <div class="projets-right">
+        <?xml version="1.0" encoding="UTF-8"?>
+          <svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="chevron-bottom" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                <polyline id="Stroke-2" stroke="#fff" stroke-width="6" transform="translate(50.000000, 50.000000) rotate(-90.000000) translate(-50.000000, -50.000000) " points="70 90 30 50 70 10"></polyline>  
+                <animate attributeType="XML" attributeName="y" from="-100" to="100"
+                dur="5s" repeatCount="indefinite"/>
+               </g>
+        </svg>
+    </div>
+  </header> 
+  <section>
+     <div class="nom-projet"> 
+       <h3>Refonte du site responsive</h3>
+       <h2>Projet Marmottan</h2>
+     </div>
+    <div id="marmottan">
+      <img id="img-marmottan" src="img/marmottan-screen-hover-3.png" alt="home version mobile du site du Musée Marmottant">
+    </div>
+  </section>
+  <section>
+    <div class="nom-projet">
+      <h3>Refonte du site institutionnel</h3>
+      <h2>Médecin Sans frontières</H2>
+    </div>
+    <div id="msf">
+      <img src="img/msf-screen-hover.png" alt="Home du site de la MSF">
+    </div> 
+  </section>
+  <nav id="nav2">
+    <ul>
+      <li>Projet Daïkiry</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+</body>
+
