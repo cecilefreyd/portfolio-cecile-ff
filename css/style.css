@@ -1,0 +1,233 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* style.css */
+
+/*font-family*/
+
+nav, h1, h2, h3 {
+  font-family: 'Catamaran', sans-serif;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+nav {
+  background-color:#fff;
+
+  width: 100vw;
+  height: 48px;
+
+
+}
+
+#nav1 {
+  position: fixed;
+  top: 0;
+}
+
+#nav2 {
+  position: fixed;
+  bottom: 0;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  text-decoration: none;
+
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #4fbdc2;
+}
+
+a, a:hover {
+  color: #dfdede;
+  cursor: pointer;
+}
+
+
+li {
+  text-decoration: none;
+  color: #4fbdc2;
+  font-weight: 800;
+
+  font-size: 24px;
+
+  display: flex;
+
+  align-items: center;
+  height: 48px;
+}
+
+#logo {
+  width: 32px;
+  height: 32px;
+}
+
+
+
+#corps {
+ background-image: linear-gradient(240deg, #89e0e3, #51bdc2);;
+  height: 100%;
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+header {
+display: flex;
+
+width: 50%;
+}
+
+
+#lunettes {
+  margin-left:-48px;
+
+  animation-name: lunettes-anim;
+  animation-duration: 2s;
+ 
+}
+
+@keyframes lunettes-anim {
+  from {
+    margin-left: -100px;
+    }
+  to {
+    margin-left: -48px;
+    }
+  }
+  
+#designer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  width: 50%;
+}
+
+#text-designer {
+  display: flex;
+  flex-direction: column;
+
+  text-align: right;
+  margin-right: -25%;
+  margin-bottom: 60px;
+}
+
+h1 {
+  font-size: 75px;
+  color: #fff;
+
+  font-weight: 800;
+  line-height:1 ;
+
+  opacity: 0.95;
+
+  animation: h1-anim;
+  animation-duration: 3s; 
+}
+
+@keyframes h1-anim {
+  from {
+    margin-left: -80px;
+    }
+  to {
+    margin-left: 0;
+    }
+  }
+
+h2 {
+  font-size: 72px;
+  font-weight: 800;
+
+  color: #fff;
+
+  opacity: 0.85;
+}
+
+h3 {
+  font-size: 24px;
+  z-index: 1;
+
+  color: #fff;
+}
+
+#nom {
+  font-size: 40px;
+  width: 300px;
+  animation-name: nom-anim;
+  animation-duration: 1s
+}
+
+@keyframes nom-anim {
+  from {
+    margin-left: -50px;
+    }
+  to {
+    margin-left: 0;
+    }
+  }
